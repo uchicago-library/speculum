@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itineraries>
+  <itinerary id="test">
+    <description>A Test Itinerary For the Speculum Project</description>
+    <slide>
+      <name>C490</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0490-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C491</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0491-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C492</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0492-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C493</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0493-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C494</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0494-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C495</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0495-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C496</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0496-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C497</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0497-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C498</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0498-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C499</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0499-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C500</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0500-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C501</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0501-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C502</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0502-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C503</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0503-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C504</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0504-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C505</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0505-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C506</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0506-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C507</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0507-001.jpg</source>
+    </slide>
+    <slide>
+      <name>C508</name>
+      <description>[Adam Ghisi Mantuano after Giulio Romano]</description>
+      <source>speculum-0508-001.jpg</source>
+    </slide>
+  </itinerary>
+</itineraries>

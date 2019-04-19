@@ -1,0 +1,40 @@
+.imageCommentaryDivider {
+}
+.commentaryText {
+	color: #eee;
+	backgroundColor: #46433d;
+	borderThickness: 0;
+	paddingLeft: 12;
+	paddingRight: 12;
+	leading: 8;
+}
+.thumbnailList {
+	borderThickness: 0;
+}
+.thumbnail {
+	borderThickness: 0;
+}
+.itineraryList {
+}
+Canvas {
+}
+ScrollBar {
+backgroundColor: #0000ff;
+cornerRadius: 4;
+highlightAlphas: 0.0, 0.0;
+fillAlphas: 1.0, 1.0, 1.0, 1.0;
+fillColors: #333333, #333333, #333333, #333333;
+trackColors: #333333, #333333;
+themeColor: #333333;
+borderColor: #46433d;
+trackSkin: ClassReference("mx.skins.halo.ScrollTrackSkin");
+upArrowUpSkin: Embed("images/skins/upArrowUpSkin.png");
+upArrowOverSkin: Embed("images/skins/upArrowOverSkin.png");
+upArrowDownSkin: Embed("images/skins/upArrowDownSkin.png");
+downArrowUpSkin: Embed("images/skins/downArrowUpSkin.png");
+downArrowOverSkin: Embed("images/skins/downArrowOverSkin.png");
+downArrowDownSkin: Embed("images/skins/downArrowDownSkin.png");
+thumbDownSkin: Embed("images/skins/thumbUpSkin.png");
+thumbOverSkin: Embed("images/skins/thumbUpSkin.png");
+thumbUpSkin: Embed("images/skins/thumbUpSkin.png");
+}

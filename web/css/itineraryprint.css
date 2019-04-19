@@ -1,0 +1,15 @@
+* {
+	font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4, ul, p, img {
+	margin-left: 5%;
+}
+
+p {
+	margin-right: 15%;
+}
+
+div.detail {
+	margin-top: 60px;
+}

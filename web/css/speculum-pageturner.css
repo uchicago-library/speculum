@@ -1,0 +1,47 @@
+/*
+ * stylesheet for Klutznick website.
+ * still working...
+ * John Jung
+ */
+
+* {
+	border: 0 0 0 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+ul#vcr {
+	float: right;
+}
+ul#vcr li {
+	display: inline;
+}
+ul#vcr li img {
+	display: inline;
+}
+ul#vcr li a img {
+	display: inline;
+}
+
+ul#pager {
+	background: #eee;
+	float: left;
+}
+ul#pager li {
+	display: inline;
+}
+ul#pager li img {
+	display: inline;
+	border-left: 2px solid #eee;
+}
+ul#pager li a img {
+	display: inline;
+	border-left: 2px solid #eee;
+}
+ul#pager li a:hover {
+	background: #eee;
+}
+span#magnifier {
+	float: left;
+}
+

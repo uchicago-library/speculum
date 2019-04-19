@@ -1,0 +1,77 @@
+<!ELEMENT display (#PCDATA)>
+<!ELEMENT locationSet (#PCDATA | location)*>
+<!ELEMENT titleSet (#PCDATA | title)*>
+<!ELEMENT techniqueSet (#PCDATA | technique | display)*>
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title type CDATA #IMPLIED>
+<!ATTLIST title source CDATA #IMPLIED>
+<!ELEMENT relationSet (#PCDATA | relation)*>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT date (#PCDATA | earliestDate | latestDate)*>
+<!ATTLIST date type CDATA #IMPLIED>
+<!ELEMENT textrefSet (textref)*>
+<!ELEMENT textref (#PCDATA | name | refid | description)*>
+<!ELEMENT id (#PCDATA)>
+<!ATTLIST id source CDATA #IMPLIED>
+<!ELEMENT subjectSet (#PCDATA | subject)*>
+<!ELEMENT inscription (#PCDATA | position | text | textref | description)*>
+<!ELEMENT inscriptionSet (#PCDATA | inscription)*>
+<!ELEMENT term (#PCDATA)>
+<!ATTLIST term type CDATA #IMPLIED>
+<!ATTLIST term vocab CDATA #IMPLIED>
+<!ATTLIST term refid CDATA #IMPLIED>
+<!ELEMENT huref (#PCDATA)>
+<!ELEMENT latestDate (#PCDATA)>
+<!ELEMENT measurements (#PCDATA)>
+<!ATTLIST measurements type CDATA #IMPLIED>
+<!ATTLIST measurements unit CDATA #IMPLIED>
+<!ATTLIST measurements extent CDATA #IMPLIED>
+<!ELEMENT agentSet (#PCDATA | agent | display | notes | agentSet)*>
+<!ELEMENT role (#PCDATA)>
+<!ATTLIST role extent CDATA #IMPLIED>
+<!ATTLIST role vocab CDATA #IMPLIED>
+<!ATTLIST role refid CDATA #IMPLIED>
+<!ELEMENT findaid (#PCDATA | work | collection)*>
+<!ELEMENT refid (#PCDATA)>
+<!ATTLIST refid type CDATA #IMPLIED>
+<!ELEMENT location (#PCDATA | name | refid)*>
+<!ATTLIST location type CDATA #IMPLIED>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name xml:lang CDATA #IMPLIED>
+<!ATTLIST name type CDATA #IMPLIED>
+<!ATTLIST name vocab CDATA #IMPLIED>
+<!ATTLIST name refid CDATA #IMPLIED>
+<!ELEMENT descriptionSet (#PCDATA | description)*>
+<!ELEMENT sup (#PCDATA)>
+<!ELEMENT earliestDate (#PCDATA)>
+<!ELEMENT technique (#PCDATA)>
+<!ATTLIST technique vocab CDATA #IMPLIED>
+<!ATTLIST technique refid CDATA #IMPLIED>
+<!ELEMENT notes (#PCDATA)>
+<!ATTLIST notes source CDATA #IMPLIED>
+<!ELEMENT dateSet (#PCDATA | display | date)*>
+<!ELEMENT pub (#PCDATA)>
+<!ELEMENT work (#PCDATA | agentSet | dateSet | id | inscriptionSet | locationSet | measurementsSet | ref | techniqueSet | titleSet | descriptionSet | huref | relationSet | subjectSet | textref | pub | uln | subj)*>
+<!ATTLIST work id CDATA #IMPLIED>
+<!ATTLIST work refid CDATA #IMPLIED>
+<!ATTLIST work source CDATA #IMPLIED>
+<!ELEMENT agent (#PCDATA | name | role)*>
+<!ELEMENT text (#PCDATA | sup)*>
+<!ATTLIST text tyoe CDATA #IMPLIED>
+<!ATTLIST text vocab CDATA #IMPLIED>
+<!ATTLIST text refid CDATA #IMPLIED>
+<!ATTLIST text type CDATA #IMPLIED>
+<!ATTLIST text xml:lang CDATA #IMPLIED>
+<!ELEMENT measurementsSet (#PCDATA | display | measurements)*>
+<!ELEMENT subj (#PCDATA)>
+<!ELEMENT ref (#PCDATA | uln)*>
+<!ELEMENT description (#PCDATA | uln)*>
+<!ATTLIST description source CDATA #IMPLIED>
+<!ELEMENT relation (#PCDATA)>
+<!ATTLIST relation type CDATA #IMPLIED>
+<!ATTLIST relation relids CDATA #IMPLIED>
+<!ELEMENT subject (#PCDATA | term)*>
+<!ELEMENT collection (#PCDATA | agentSet | dateSet | descriptionSet | inscriptionSet | locationSet | pub | relationSet | subjectSet | textrefSet | titleSet)*>
+<!ATTLIST collection refid CDATA #IMPLIED>
+<!ATTLIST collection source CDATA #IMPLIED>
+<!ELEMENT uln (#PCDATA)>

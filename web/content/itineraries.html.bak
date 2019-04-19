@@ -1,0 +1,19 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>The Speculum Romanae Magnificentiae</title>
+<link href="css/speculum.css" rel="stylesheet" type="text/css"/>
+<link href="css/speculum-contentpages.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<h1>Itineraries (Mockup)</h1>
+<p><img src="../images/speculum-0490-001.jpg"></p>
+<p><a href="../itinerarysample/">Itinerary Title, by Author</a></p>
+<p>A brief description of your itinerary will appear below it's title, the author's name, and a thumbnail image from the digital collection that is representative of your itinerary.</p>
+<hr/>
+<p><a href="../scripts/view.php?view1=0001001">An interface for inputting zooming instructions.</a></p>
+</body>
+</html>

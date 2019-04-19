@@ -1,0 +1,58 @@
+.imageCommentaryDivider {
+	backgroundColor: #46433d;
+	bottom: 138;
+	top: 50;
+}
+
+.zoomifyPadding {
+	 backgroundColor: #000000;
+}
+
+.zoomifyWrapper {
+	backgroundColor: #eeeeee;
+}
+
+.titleBar {
+		border-skin: ClassReference("de.richinternet.SimpleGradientBorder");
+        fill-colors: #df790c, #000000;
+	}
+
+.commentary {
+	color: #eee;
+	backgroundColor: #46433d;
+	borderThickness: 0;
+	paddingLeft: 12;
+	paddingRight: 12;
+	leading: 8;
+}
+
+.thumbnailList {
+	borderThickness: 0;
+	
+}
+
+.thumbnail {
+	borderThickness: 0;
+}
+
+ScrollBar {
+backgroundColor: #0000ff;
+cornerRadius: 4;
+highlightAlphas: 0.0, 0.0;
+fillAlphas: 1.0, 1.0, 1.0, 1.0;
+fillColors: #333333, #333333, #333333, #333333;
+trackColors: #2a2823, #2a2823;
+themeColor: #333333;
+borderColor: #46433d;
+trackSkin: Embed("../images/skins/trackSkin.png");
+upArrowUpSkin: Embed("../images/skins/upArrowUpSkin.png");
+upArrowOverSkin: Embed("../images/skins/upArrowDownSkin.png");
+upArrowDownSkin: Embed("../images/skins/upArrowDownSkin.png");
+downArrowUpSkin: Embed("../images/skins/downArrowUpSkin.png");
+downArrowOverSkin: Embed("../images/skins/downArrowDownSkin.png");
+downArrowDownSkin: Embed("../images/skins/downArrowDownSkin.png");
+thumbUpSkin: Embed("../images/skins/thumbUpSkin.png", scaleGridTop="3", scaleGridBottom="11", scaleGridLeft="3", scaleGridRight="11");
+thumbOverSkin: Embed("../images/skins/thumbDownSkin.png", scaleGridTop="3", scaleGridBottom="11", scaleGridLeft="3", scaleGridRight="11");
+thumbDownSkin: Embed("../images/skins/thumbDownSkin.png", scaleGridTop="3", scaleGridBottom="11", scaleGridLeft="3", scaleGridRight="11");
+}
+

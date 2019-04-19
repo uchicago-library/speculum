@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<browses>
+<browse name='city'>Browse by City</browse>
+<browse name='collection'>Browse by Group</browse>
+<browse name='date'>Browse by Date</browse>
+<browse name='engraver'>Browse by Engraver</browse>
+<browse name='printmaker'>Browse by Printmaker</browse>
+<browse name='publisher'>Browse by Publisher</browse>
+<browse name='subject'>Browse by Subject</browse>
+</browses>

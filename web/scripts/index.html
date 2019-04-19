@@ -1,0 +1,100 @@
+<html>
+<head>
+<style>
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+div.tab {
+	border:1px dashed red;
+}
+div#holder1 {
+	width: 50%;
+	float: left;
+}
+div#holder2 {
+	width: 50%;
+	float: right;
+}
+div.tab {
+	height: 100%;
+}
+</style>
+
+<script>
+/*
+ * each tab link has a 'rel' tag which matches exactly one div tag's id. 
+ * when a tab is selected, all other tabs are turned off, and the tab 
+ * that did the selecting is turned on. 
+ * 
+ */
+
+function resizeTabs() {
+	divs = document.getElementsByTagName("div");
+	tabHeight = 0;
+	for (var i = 0; i < divs.length; i++) {
+		if (divs[i].className == 'tabs') 
+			tabHeight = divs[i].offsetHeight;
+	}
+	document.getElementById("holder1").style.height = window.innerHeight - tabHeight - 2;
+	document.getElementById("holder2").style.height = window.innerHeight - tabHeight - 2;
+}
+
+function setupTabs() {
+	document.getElementById("atwo").style.display = 'none';
+	document.getElementById("btwo").style.display = 'none';
+	resizeTabs();
+}
+
+function flipTabs(obj) {
+	tabs = obj.parentNode.parentNode; 
+	for (var i = 0; i < tabs.childNodes.length; i++) {
+		t = tabs.childNodes[i];
+		if (t.className == 'tab')
+			t.style.display = 'none';
+		if (obj.rel == t.id) 
+			t.style.display = 'block';
+	}
+}
+</script>
+</head>
+<body onload="setupTabs();" onresize="resizeTabs();">
+<div class="tabholder" id="holder1">
+<div class="tabs">
+	<a href="#one" rel="aone" onclick="flipTabs(this); return false;">one</a>
+	<a href="#two" rel="atwo" onclick="flipTabs(this); return false;">two</a>
+</div><!--tabs-->
+<div class="tab" id="aone">
+<a name="one"/>
+<h1>One</h1>
+<p>Text about one. <a href="http://www.google.com">link</a></p>
+</div><!--tab-one-->
+<div class="tab" id="atwo">
+<a name="two"/>
+<h1>Two</h1>
+<p>Text about two. <a href="http://www.yahoo.com">different link</a></p>
+</div><!--tab-two-->
+</div><!--tabholder-->
+
+<div class="tabholder" id="holder2">
+<div class="tabs">
+	<a href="#one" rel="bone" onclick="flipTabs(this); return false;">one</a>
+	<a href="#two" rel="btwo" onclick="flipTabs(this); return false;">two</a>
+</div><!--tabs-->
+<div class="tab" id="bone">
+<a name="one"/>
+<h1>One</h1>
+<p>Text about one.</p>
+</div><!--tab-one-->
+<div class="tab" id="btwo">
+<a name="two"/>
+<h1>Two</h1>
+<p>Text about two.</p>
+</div><!--tab-two-->
+</div><!--tabholder-->
+</body>
+</html>
+
+
+
