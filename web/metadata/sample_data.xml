@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE findaid SYSTEM "pt3-speculum-merged.dtd">
+<findaid>
+  <work id="speculum-0001" refid="A1" source="Speculum Romanae Magnificentiae, University of Chicago">
+    <agentSet>
+      <agent>
+        <name type="personal" vocab="ULAN" refid="500000071">Dupérac, Etienne</name>
+        <role vocab="AAT" refid="300025165">Engraver (printmaker)</role>
+      </agent>
+      <agent>
+        <name type="personal" vocab="ULAN" refid="500011513">Lafreri, Antonio</name>
+        <role vocab="AAT" refid="300025574">Publisher</role>
+      </agent>
+    </agentSet>
+    <dateSet>
+      <display>1574-1577</display>
+      <date type="publisher">
+        <earliestDate>1574</earliestDate>
+        <latestDate>1577</latestDate>
+      </date>
+    </dateSet>
+    <id source="University of Chicago Library Department of Special Collections, A Descriptive Catalogue of Engravings from the University of Chicago Library's Speculum Romanae Magnificentiae, Chicago, 1973">A 1</id>
+    <inscriptionSet>
+      <inscription>
+        <position>center</position>
+        <text type="text" xml:lang="La">Speculum Romanae Magnificentiae. Omnia fere quaecunq in urbe monumenta extant, partim iuxta antiquam, partim iuxta
+        hodiernam formam accuratiss. delineata repraesentans. Accesserunt non paucae, tum antiquarum, tum modernarum rerum. Urbis figurae nunquam antehac aeditae.</text>
+        <text type="resolvedText" xml:lang="la">Speculum Romanae Magnificentiae. Omnia fere quaecunque in urbe monumenta extant, partim iuxta antiquam, partim iuxta
+        hodiernam formam accuratissime delineata repraesentans. Accesserunt non paucae, tum antiquarum, tum modernarum rerum. Urbis figurae nunquam antehac aeditae.</text>
+        <text type="displayText" xml:lang="La">Speculum Romanae Magnificentiae. Omnia fere quaecunq(ue) in urbe monumenta extant, partim iuxta antiquam, partim iuxta
+          hodiernam formam accuratiss(ime) delineata repraesentans. Accesserunt non paucae, tum antiquarum, tum modernarum rerum. Urbis figurae nunquam antehac aeditae.</text>
+        <text type="translation" xml:lang="En">A Mirror of Roman Magnificence - Representing nearly all the monuments in the city, however small, some ancient in form, some modern, most accurately sketched - The images of the city, never displayed before now, constitute not a small number of ancient and modern subjects.</text>
+      </inscription>
+    </inscriptionSet>
+  </work>
+</findaid>
