@@ -1,5 +1,9 @@
-FROM php:7.4-cli
-COPY web /usr/src/myapp
-WORKDIR /usr/src/myapp
-CMD [ "cd", "/usr/src/myapp" ]
-CMD [ "php", "-S", "0.0.0.0:8080" ]
+FROM php:7.4-apache
+COPY web /var/www/html/
+
+RUN apt-get update
+
+RUN apt install -y libxslt-dev
+RUN docker-php-ext-install xsl
+
+RUN docker-php-ext-install dba
