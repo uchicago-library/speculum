@@ -1,5 +1,3 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
 <?php
 
 // view.php?id=speculum-0295-002
@@ -50,60 +48,56 @@ if (isset($_GET['id'])) {
 }
 $imagepath = 'images/zoomify/' . $clean['id'];
 
+$document_number = explode('-', $clean['id'])[1];
+if (preg_match('/^[0-9]{4}$/', $document_number) !== 1) {
+    die();
+}
+
+$manifest_uri = sprintf(
+    'https://iiif-manifest.lib.uchicago.edu/speculum/%s/speculum-%s.json',
+    $document_number,
+    $document_number
+);
+
 ?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="uv/uv.css"/>
+        <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+        <script type="text/javascript" src="uv/uv-assets/js/bundle.js"></script>
+        <script type="text/javascript" src="uv/uv-helpers.js"></script>
+        <script type="text/javascript" src="uv/uv-dist-umd/UV.js"></script>
+        <title>The Speculum Romanae Magnificentiae</title>
+        <style>
+            html, body {
+                 height: 100%;
+                 margin: 0;
+            }   
+            #uv {
+                width: 100%;
+                height: 100%;
+            }   
+        </style>
+    </head>
+    <body>
 
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="Pragma" content="no-cache">
-<title>The Speculum Romanae Magnificentiae</title>
-<style>
-* {
-	border: 0;
-	margin: 0;
-	padding: 0;
-}
-html {
-	height: 100%;
-}
-body {
-	background: #ffffff;
-	height: 100%;
-	width: 100%;
-}
-</style>
-<script src="/scripts/ga.js"></script>
-</head>
-<body onLoad="javascript:window.focus()">
+        <div id="uv"></div>
 
-<object
- classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
- codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
- width="100%"
- height="100%"
- id="zoomifyviewer"
- align="middle">
-	<param name="allowScriptAccess" value="sameDomain" />
-	<param name="movie" value="zoomifyviewer.swf" />
-	<param name="flashVars" value="imagepath=<?php echo $imagepath; ?>" />
-	<param name="quality" value="high" />
-	<param name="scale" value="noscale" />
-	<param name="bgcolor" value="#ffffff" />
-	<embed
-	 src="zoomifyviewer.swf"
-	 flashvars="imagepath=<?php echo $imagepath; ?>"
-	 quality="high"
-	 scale="noscale"
-	 bgcolor="#ffffff"
-	 width="100%"
-	 height="100%"
-	 name="zoomifyviewer"
-	 align="middle"
-	 allowScriptAccess="sameDomain"
-	 type="application/x-shockwave-flash"
-	 pluginspage="http://www.macromedia.com/go/getflashplayer" />
-</object>
+        <script type="text/javascript">
+            urlDataProvider = new UV.URLDataProvider();
 
-</body>
+            var manifest_uri = "<?php echo $manifest_uri; ?>";
+
+            var uv = createUV("uv", {
+                manifestUri: manifest_uri,
+                assetsDir: "uv/uv-assets",
+                configUri: "uv-config.json"
+            }, new UV.URLDataProvider());
+        </script>
+
+    </body>
 </html>
-

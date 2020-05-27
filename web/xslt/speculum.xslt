@@ -62,7 +62,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <div id="content">
 
 <!-- HEADER -->
-	<div id="header"><div style="float: left;"><a href="index.html"><img src="../images/content-bg.jpg"/></a></div><div style="float: right;"><a href="http://www.lib.uchicago.edu/h/dla"><img src="../images/banner-dla-logo.gif" alt="The University of Chicago Library Digital Activities and Collections"/></a></div></div>
+	<div id="header"><div style="float: left;"><a href="index.html"><img src="../images/content-bg.jpg"/></a></div><div style="float: right;"><a href="https://www.lib.uchicago.edu/h/dl"><img src="../images/banner-dla-logo.gif" alt="The University of Chicago Library Digital Activities and Collections"/></a></div></div>
 <!-- /HEADER -->
 
 <!-- NAVIGATION -->

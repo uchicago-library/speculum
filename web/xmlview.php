@@ -39,7 +39,7 @@ if (isset($_GET['id'])) {
 	$clean['id'] = cleanPid($_GET['id']);
 }
 
-$tmp = split('-', $clean['id']);
+$tmp = explode('-', $clean['id']);
 $clean['refid'] = getChicagoNumber($tmp[1]);
 
 $xml = buildFindingAid(array($clean['refid']));
