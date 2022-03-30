@@ -1047,9 +1047,10 @@ $arks = array(
     "0994" => "ark:61001/b27441d9t17p",
 );
 
+$noid = explode('/', $arks[$document_number])[1];
 $manifest_uri = sprintf(
-    'https://iiif-manifest.lib.uchicago.edu/%s',
-    $arks[$document_number]
+    'https://iiif-collection.lib.uchicago.edu/object/ark:/61001/%s.json',
+     $noid
 );
 
 ?>
